@@ -1,48 +1,304 @@
+/* ── VARIÁVEIS E RESET ── */
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #141414;
+  --accent: #60a5fa;
+  --accent-rgb: 96, 165, 250;
+  --text: #ffffff;
+  --muted: #a1a1aa;
+  --muted2: #71717a;
+  --border: #27272a;
+  --font-main: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-title: 'Bebas Neue', cursive;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── CURSOR CUSTOM ── */
+#cur, #cur-ring {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cur {
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+}
+
+#cur-ring {
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid var(--accent);
+  transition: width .3s, height .3s, opacity .3s;
+}
+
+/* ── NAVEGAÇÃO ── */
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+#nav.scrolled {
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1rem 5%;
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-name {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.nav-name em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* ── HERO CENTRALIZADO ── */
 #hero.hero-centered {
   display: flex;
   justify-content: center;
-  text-align: center;
-  min-height: 90vh;
-}
-
-#hero.hero-centered .hero-content {
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 80px;
 }
 
-#hero.hero-centered .hero-desc {
-  max-width: 600px;
+.hero-content {
+  max-width: 850px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(var(--accent-rgb), 0.1);
+  color: var(--accent);
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(var(--accent-rgb), 0.2);
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: clamp(4rem, 12vw, 8rem);
+  line-height: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.outline {
+  -webkit-text-stroke: 1px var(--text);
+  color: transparent;
+}
+
+.blue {
+  color: var(--accent);
+}
+
+.hero-desc {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#hero.hero-centered .hero-ctas {
-  justify-content: center;
+/* ── BOTÕES ── */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s;
 }
 
-/* Garante que o grid de projetos não quebre o layout enquanto estiver vazio */
-.proj-grid {
-  min-height: 200px;
+.btn-fill {
+  background: var(--accent);
+  color: #000;
 }
 
-/* Máscaras para ícones (como discutido antes) */
+.btn-fill:hover {
+  background: #fff;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  border: 1px solid var(--border);
+  color: var(--text);
+  margin-left: 1rem;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.05);
+}
+
+/* ── SEÇÕES ── */
+.section {
+  padding: 8rem 5%;
+}
+
+.sec-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sec-eyebrow {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.sec-title {
+  font-family: var(--font-title);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 2.5rem;
+}
+
+/* ── SKILLS & MÁSCARAS ── */
+.skills-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-block {
+  background: var(--bg-card);
+  padding: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.skill-block:hover {
+  border-color: var(--accent);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-name {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+}
+
 .icon-mask {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   background-color: var(--accent);
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
   display: inline-block;
 }
 
+/* Ícones das Skills */
 .icon-python { -webkit-mask-image: url('logos/python.svg'); mask-image: url('logos/python.svg'); }
 .icon-node { -webkit-mask-image: url('logos/node.svg'); mask-image: url('logos/node.svg'); }
-.icon-go { -webkit-mask-image: url('logos/go.svg'); mask-image: url('logos/go.svg'); }
-.icon-java { -webkit-mask-image: url('logos/java.svg'); mask-image: url('logos/java.svg'); }
-.icon-frontend { -webkit-mask-image: url('logos/layout.svg'); mask-image: url('logos/layout.svg'); }
 .icon-tools { -webkit-mask-image: url('logos/tools.svg'); mask-image: url('logos/tools.svg'); }
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.pill {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--muted);
+}
+
+/* ── EFEITO REVEAL (JS) ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.on {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── FOOTER ── */
+footer {
+  padding: 4rem 5%;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.foot-mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted2);
+  margin-bottom: 0.5rem;
+}
+
+footer em {
+  color: var(--accent);
+  font-style: normal;
+}
