@@ -14,6 +14,7 @@
 <div id="cur"></div>
 <div id="cur-ring"></div>
 
+<!-- ── NAV ── -->
 <nav id="nav">
   <div class="nav-name">Leo<em> Costa</em></div>
   <ul class="nav-links">
@@ -24,14 +25,15 @@
   </ul>
 </nav>
 
+<!-- ── HERO ── -->
 <div style="max-width:1300px;margin:0 auto">
-  <section id="hero" class="hero-centered">
-    <div class="hero-content">
+  <section id="hero">    
+    <div class="hero-left">
       <div class="badge">Disponível para novos projetos</div>
       <h1>
         LEO<br>
         <span class="outline">COSTA</span><br>
-        <span class="blue">DEV</span>
+        <span class="blue">DESENVOLVEDOR</span>
       </h1>
       <p class="hero-desc">
         Desenvolvedor apaixonado por tecnologia, construindo soluções que vão do <strong>backend robusto</strong> ao <strong>frontend elegante</strong>. Do Python ao React, do Go ao Node — <em>código limpo é a regra</em>.
@@ -41,9 +43,11 @@
         <a href="#contact" class="btn btn-outline">Fala comigo</a>
       </div>
     </div>
+
   </section>
 </div>
 
+<!-- ── STATS ── -->
 <div class="stats-row">
   <div class="stat">
     <span class="stat-n" data-to="10">0</span>
@@ -55,14 +59,15 @@
   </div>
   <div class="stat">
     <span class="stat-n" data-to="3">0</span>
-    <span class="stat-l">Anos de código</span>
+    <span class="stat-l">Anos de experiência </span>
   </div>
   <div class="stat">
     <span class="stat-n" data-to="100">0</span>
-    <span class="stat-l">% de dedicação</span>
+    <span class="stat-l"> de dedicação</span>
   </div>
 </div>
 
+<!-- ── ABOUT ── -->
 <section id="about" class="section">
   <div class="sec-inner">
     <div class="about-grid">
@@ -70,13 +75,13 @@
         <div class="sec-eyebrow">Quem sou</div>
         <h2 class="sec-title">Minha história</h2>
         <p>
-          Tudo começou com o hábito de desmontar sistemas para entender o que havia <em>"sob o capô"</em>. Hoje, essa curiosidade transformou-se em uma carreira como desenvolvedor full-stack, onde transformo lógica em impacto.
+         Tudo começou com o hábito de desmontar sistemas para entender o que havia <em>"sob o capô"</em>. Hoje, essa curiosidade transformou-se em uma carreira como desenvolvedor full-stack, onde transformo lógica em impacto.
         </p>
         <p>
-          Com um <em>stack versátil</em> que inclui Python, Go, Java e Node.js no backend, e React e JavaScript no frontend, foco em construir a ponte entre sistemas complexos e experiências de usuário fluidas.
+          Com um <em>stack versátil </em>que inclui Python, Go, Java e Node.js no backend, e React e javascript no frontend, foco em construir a ponte entre sistemas complexos e experiências de usuário fluidas. Para mim, o desenvolvimento vai além de <em>linhas de código</em>; trata-se de criar soluções que outros desenvolvedores possam entender e manter..
         </p>
         <p>
-          Acredito que código de qualidade é aquele que é <em>legível e evolutivo</em>. Por isso, foco em clareza e colaboração em todas as etapas do desenvolvimento.
+        Acredito que código de qualidade é aquele que é <em>legível e evolutivo</em>. Por isso, foco em clareza e colaboração em todas as etapas do desenvolvimento. <em>Além do código,</em> contribuo para o ecossistema através de projetos open-source e estudo contínuo de arquitetura de software.
         </p>
         <div style="margin-top:2rem">
           <a href="#contact" class="btn btn-fill">Vamos conversar →</a>
@@ -102,80 +107,234 @@
               <div class="tl-co">Python & Node.js — APIs e automações</div>
             </div>
           </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2022—2023</div>
+            <div class="tl-content">
+              <div class="tl-role">Início da jornada dev</div>
+              <div class="tl-co">Estudos, projetos pessoais e primeiras entregas</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="skills" class="section">
+<!-- ── SKILLS ── -->
+<section id="skills" class="section" style="padding-top:5rem;padding-bottom:5rem">
   <div class="sec-inner">
     <div class="sec-eyebrow reveal">Habilidades técnicas</div>
     <h2 class="sec-title reveal">Stack completa</h2>
+
     <div class="skills-wrap reveal">
       <div class="skill-block">
         <div class="skill-header">
-          <span class="skill-ico"><div class="icon-mask icon-python"></div></span>
+          <span class="skill-ico"><img src="logos/python(1).svg" alt="Python" class="skill-icon-img"></span>
           <span class="skill-name">Python</span>
         </div>
-        <div class="skill-desc">APIs REST e integração com serviços externos. Flask para web apps rápidos.</div>
+        <div class="skill-desc">Backend, automações, scripts, APIs REST e integração com serviços externos. Flask para web apps rápidos e eficientes.</div>
         <div class="pills">
-          <span class="pill green">Python</span><span class="pill green">Flask</span><span class="pill green">FastAPI</span>
+          <span class="pill green">Python</span>
+          <span class="pill green">Flask</span>
+          <span class="pill green">FastAPI</span>
+          <span class="pill green">Requests</span>
+          <span class="pill green">SQLAlchemy</span>
         </div>
       </div>
+
       <div class="skill-block">
         <div class="skill-header">
-          <span class="skill-ico"><div class="icon-mask icon-node"></div></span>
-          <span class="skill-name">Node & JS</span>
+          <span class="skill-ico"><img src="logos/javascript(1).svg" class="skill-icon-img"</span>
+          <span class="skill-name">JavaScript & Node</span>
         </div>
-        <div class="skill-desc">Node.js para servidores rápidos e React para interfaces modernas.</div>
+        <div class="skill-desc">Da lógica de negócio ao frontend dinâmico. Node.js para servidores rápidos, React para interfaces modernas e reativas.</div>
         <div class="pills">
-          <span class="pill">Node.js</span><span class="pill">React</span><span class="pill">JavaScript</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">React</span>
+          <span class="pill">Express</span>
+          <span class="pill">REST APIs</span>
         </div>
       </div>
+
       <div class="skill-block">
         <div class="skill-header">
-          <span class="skill-ico"><div class="icon-mask icon-tools"></div></span>
-          <span class="skill-name">Ferramentas</span>
+          <span class="skill-ico"><img src="logos/go(1).svg" class="skill-icon-img"</span>
+          <span class="skill-name">Golang</span>
         </div>
-        <div class="skill-desc">Controle de versão, containers e bancos de dados.</div>
+        <div class="skill-desc">Performance e concorrência de alto nível. Go para microsserviços, CLIs e sistemas que precisam escalar com eficiência.</div>
         <div class="pills">
-          <span class="pill">Git</span><span class="pill">Docker</span><span class="pill">PostgreSQL</span>
+          <span class="pill red">Go</span>
+          <span class="pill red">Goroutines</span>
+          <span class="pill red">HTTP servers</span>
+          <span class="pill red">CLI tools</span>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-header">
+          <span class="skill-ico"><img src="logos/icons8-java.svg" class="skill-icon-img"</span>
+          <span class="skill-name">Java</span>
+        </div>
+        <div class="skill-desc">Linguagem sólida para sistemas corporativos, POO avançada e aplicações robustas com foco em manutenibilidade.</div>
+        <div class="pills">
+          <span class="pill">Java</span>
+          <span class="pill">POO</span>
+          <span class="pill">Collections</span>
+          <span class="pill">Maven</span>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-header">
+          <span class="skill-ico"><img src="logos/react(1).svg" class="skill-icon-img"</span>
+          <span class="skill-name">Frontend</span>
+        </div>
+        <div class="skill-desc">HTML semântico e CSS moderno — layouts responsivos, animações fluidas e interfaces que funcionam em qualquer dispositivo.</div>
+        <div class="pills">
+          <span class="pill green">HTML5</span>
+          <span class="pill green">CSS3</span>
+          <span class="pill green">Flexbox</span>
+          <span class="pill green">Grid</span>
+          <span class="pill green">Responsivo</span>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-header">
+          <span class="skill-ico"><img src="logos/git(1).svg" class="skill-icon-img"</span>
+          <span class="skill-name">Ferramentas & Outros</span>
+        </div>
+        <div class="skill-desc">Ambiente profissional de desenvolvimento com controle de versão, containers e boas práticas de engenharia de software.</div>
+        <div class="pills">
+          <span class="pill">Git</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Linux</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">MySQL</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ── PROJECTS ── -->
 <section id="projects" class="section">
   <div class="sec-inner">
     <div class="sec-eyebrow reveal">Trabalhos</div>
     <h2 class="sec-title reveal">Projetos em destaque</h2>
+    <p class="reveal" style="color:var(--muted2);font-size:.85rem;margin-bottom:.5rem">
+      <span style="color:var(--muted);font-family:'JetBrains Mono',monospace"></span> 
+    </p>
+
     <div class="proj-grid">
+
+      <!-- Projeto 1 — grande -->
+      <div class="proj-card col7 reveal">
+        <img src="logos/Screenshot 2026-04-27 at 15-35-31 .png"   alt="Projeto API REST com Python & Flask" class="proj-img"> 
+        
+        
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-year">2024</span>
+            <span class="proj-status s-live">● Live</span>
+          </div>
+          <div class="proj-title">Sistema de gerenciamento</div>
+          <div class="proj-desc">Plataforma completa para gestão de agendamentos, controle de estoque e recursos. Desenvolvida para otimizar o fluxo de trabalho e atendimento ao cliente.</div>
+          <div class="proj-stack">
+            <span class="stk">Python</span><span class="stk">Flask</span><span class="stk">Firebase</span>
+            <span class="stk">Firestore</span>
+          </div>
+          <div class="proj-link-wrap">
+      <a href="https://sistema-app-mbfu.onrender.com" 
+         class="proj-link" 
+         target="_blank" 
+         rel="noopener noreferrer">
+         Ver Repositório →
+      </a>
+    </div>
+          </div>
+        </div>
+      
+
+      <!-- Projeto 2 — pequeno -->
+      <div class="proj-card col7 reveal">
+         <img src="logos/tec login.png" alt="tela de cadastro" class="proj-img"
+        </div>
+        <div class="proj-body">
+          <div class="proj-meta">
+            <span class="proj-year">2025</span>
+            <span class="proj-status s-live">● Live</span>
+          </div>
+          <div class="proj-title">Tela de Cadastro</div>
+          <div class="proj-desc">Interface de cadastro projetada com estética visual sofisticada, utilizando conceitos modernos de UI Design para transformar formulários em experiências fluidas.</div>
+          <div class="proj-stack">
+            <span class="stk">HTML</span><span class="stk">CSS</span><span class="stk">JavaScript</span>
+          </div>
+          <div class="proj-link-wrap">
+          <a href="https://leocosta06.github.io/cadastro-inteligente/"  
+         class="proj-link" 
+         target="_blank" 
+         rel="noopener noreferrer">
+         Ver Repositório →
+        </a>
+            
+          </div>
+        </div>
       </div>
+    </div>
+     
+
+    </div>
   </div>
 </section>
 
+<!-- ── CONTACT ── -->
 <section id="contact" class="section">
   <div class="sec-inner">
     <div class="contact-inner">
       <div class="sec-eyebrow reveal" style="justify-content:center">Contato</div>
-      <h2 class="sec-title reveal" style="text-align:center;font-size:clamp(2.5rem,5vw,5rem)">VAMOS CRIAR<br>ALGO JUNTOS?</h2>
+      <h2 class="sec-title reveal" style="text-align:center;font-size:clamp(2.5rem,5vw,5rem)">
+        VAMOS CRIAR<br>ALGO JUNTOS?
+      </h2>
+      <p class="reveal" style="color:var(--muted2);font-size:1rem;line-height:1.7;text-align:center;max-width:420px;margin:0 auto">
+        Estou aberto a projetos freelance, oportunidades full-time.
+      </p>
+
       <div style="text-align:center">
-        <a href="mailto:leonardocalmeida2@gmail.com" class="big-email reveal">leonardocalmeida2@gmail.com</a>
+        <a href="mailto:leonardocalmeida2@gmail.com" class="big-email reveal">
+          leonardocalmeida2@gmail.com
+        </a>
       </div>
+
       <div class="socials reveal">
-        <a href="https://github.com/leonardocalmeida2" class="soc-btn" target="_blank" rel="noopener noreferrer">⌥ GitHub</a>
-        <a href="#" class="soc-btn" target="_blank" rel="noopener noreferrer">in LinkedIn</a>
+        <a href="https://github.com/leocosta06" target="_blank" rel="noopener noreferrer" class="soc-btn"> GitHub</a>
+        <a href="www.linkedin.com/in/leonardo-costa-828502265" target="_blank" rel="noopener noreferrer" class="soc-btn"> LinkedIn</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ── FOOTER ── -->
 <footer>
   <div class="foot-mono">© 2025 <em>Leo Costa</em> — Todos os direitos reservados</div>
-  <div class="foot-mono">Feito com <em>♥</em> e muito café ☕</div>
 </footer>
+
+<!-- ── MODAL LINK ── -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <h3>Adicionar Link</h3>
+    <p>Cole a URL do projeto (GitHub, deploy, etc.)</p>
+    <label for="linkInput">URL do projeto</label>
+    <input type="url" id="linkInput" placeholder="https://github.com/seu-usuario/projeto">
+    <div class="modal-btns">
+      <button class="btn btn-outline" onclick="closeModal()" style="cursor:none">Cancelar</button>
+      <button class="btn btn-fill" onclick="saveLink()" style="cursor:none">Salvar →</button>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
