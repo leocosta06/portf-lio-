@@ -1,0 +1,48 @@
+
+#hero.hero-centered {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 90vh;
+}
+
+#hero.hero-centered .hero-content {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero.hero-centered .hero-desc {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero.hero-centered .hero-ctas {
+  justify-content: center;
+}
+
+/* Garante que o grid de projetos não quebre o layout enquanto estiver vazio */
+.proj-grid {
+  min-height: 200px;
+}
+
+/* Máscaras para ícones (como discutido antes) */
+.icon-mask {
+  width: 28px;
+  height: 28px;
+  background-color: var(--accent);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  display: inline-block;
+}
+
+.icon-python { -webkit-mask-image: url('logos/python.svg'); mask-image: url('logos/python.svg'); }
+.icon-node { -webkit-mask-image: url('logos/node.svg'); mask-image: url('logos/node.svg'); }
+.icon-go { -webkit-mask-image: url('logos/go.svg'); mask-image: url('logos/go.svg'); }
+.icon-java { -webkit-mask-image: url('logos/java.svg'); mask-image: url('logos/java.svg'); }
+.icon-frontend { -webkit-mask-image: url('logos/layout.svg'); mask-image: url('logos/layout.svg'); }
+.icon-tools { -webkit-mask-image: url('logos/tools.svg'); mask-image: url('logos/tools.svg'); }
