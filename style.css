@@ -507,8 +507,8 @@ h1 .blue{color:var(--accent)}
   margin: 0 auto;
 }
 
-/* Estilo para o link do WhatsApp/Telefone */
-.contact-phone {
+
+.contact-phone 
 {
   display: inline-block;
   font-family: 'Bebas Neue', sans-serif;
