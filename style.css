@@ -348,7 +348,7 @@ h1 .blue{color:var(--accent)}
 .pill.green{background:rgba(0,229,160,.07);color:var(--accent3);border-color:rgba(0,229,160,.2)}
 .pill.red{background:rgba(255,107,107,.07);color:#ff9f9f;border-color:rgba(255,107,107,.2)}
 .skill-icon-img {
-  width: 24px; /* Ajuste o valor conforme necessário */
+  width: 24px; 
   height: auto;
 }
 
@@ -498,32 +498,77 @@ h1 .blue{color:var(--accent)}
 .modal-close:hover{color:var(--text)}
 
 /* ── CONTACT ── */
-#contact{text-align:center}
-.contact-inner{max-width:640px;margin:0 auto}
-.big-email{
-  display:inline-block;
-  font-family:'Bebas Neue',sans-serif;
-  font-size:clamp(1.8rem,4vw,3rem);
-  color:var(--text);
-  text-decoration:none;
-  letter-spacing:.04em;
-  margin:2.5rem 0;
-  border-bottom:2px solid var(--accent);
-  padding-bottom:.2rem;
-  transition:color .2s;
+#contact {
+  text-align: center;
 }
-.big-email:hover{color:var(--accent)}
-.socials{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:2rem}
-.soc-btn{
-  display:inline-flex;align-items:center;gap:.5rem;
-  padding:.7rem 1.4rem;
-  border:1px solid var(--border);border-radius:6px;
-  font-size:.75rem;font-weight:600;
-  color:var(--muted2);text-decoration:none;
-  text-transform:uppercase;letter-spacing:.07em;
-  transition:all .2s;cursor:none;
+
+.contact-inner {
+  max-width: 640px;
+  margin: 0 auto;
 }
-.soc-btn:hover{color:var(--accent);border-color:rgba(91,140,255,.4);background:rgba(91,140,255,.06)}
+
+/* Estilo para o link do WhatsApp/Telefone */
+.contact-phone {
+  display: block;
+  margin-top: 1rem;
+  color: #8b5cf6; /* Cor roxa da imagem */
+  text-decoration: underline;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  transition: opacity 0.2s;
+}
+
+.contact-phone:hover {
+  opacity: 0.8;
+}
+
+.big-email {
+  display: inline-block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: .04em;
+  margin: 2.5rem 0;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: .2rem;
+  transition: color .2s;
+}
+
+.big-email:hover {
+  color: var(--accent);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.soc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .7rem 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--muted2);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  transition: all .2s;
+  cursor: none;
+}
+
+.soc-btn:hover {
+  color: var(--accent);
+  border-color: rgba(91, 140, 255, 0.4);
+  background: rgba(91, 140, 255, 0.06);
+}
 
 /* ── FOOTER ── */
 footer{
