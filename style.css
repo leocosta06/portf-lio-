@@ -509,13 +509,17 @@ h1 .blue{color:var(--accent)}
 
 /* Estilo para o link do WhatsApp/Telefone */
 .contact-phone {
-  display: block;
-  margin-top: 1rem;
-  color: #8b5cf6; /* Cor roxa da imagem */
-  text-decoration: underline;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 1.1rem;
-  transition: opacity 0.2s;
+{
+  display: inline-block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: .04em;
+  margin: 2.5rem 0;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: .2rem;
+  transition: color .2s;
 }
 
 .contact-phone:hover {
